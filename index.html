@@ -103,10 +103,10 @@
 					</p>	
 				</div><!--col8-->
 				<div class="col-sm-4">
-				<button  class="btn btn-success btn-lg btn-block" data-toggel="modal"
-				data-target="#myModal">
-					Click here to subscribe 
-				</button>
+					<button class="btn btn-success btn-lg btn-block" data-toggle="modal"
+					data-target="#myModal">
+						Click here to subscribe 
+					</button>
 					
 				</div><!--col4-->
 			</div><!--row-->
@@ -154,18 +154,31 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<button type="button" data-dismiss="modal" class="close">
-							<span aria-hidden="true">&time;</span>
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true"> &times; </span>
 							<span class="sr-only">Close</span>
+							</button>
 							<h4 class="modal-title" id="myModalLabel">
 								<i class="fa fa-envelope"></i>
 								Subcribe to our Mailing List
 							</h4>
-						</button>
 					</div><!--modal-header-->
 					<div class="modal-body">
 					<p>Simply enter your name and mail! As a thank you for joining us,
 					we're going to give you one of our best-selling coures, <em> for free</em></p>
+					<form role="form" class="form-inline">
+						<div class="form-group">
+							<label for="subscribe-name" class="sr-only"> Your first name</label>
+							<input type="text" class="form-control" id="subscribe-name" placeholder="Your first name">
+						</div><!--form-group-->
+						<div class="form-group">
+							<label for="subscribe-mail" class="sr-only"> Your mail</label>
+							<input type="text" class="form-control" id="subscribe-mail" placeholder="Your mail">
+						</div><!--form-group-->
+						<input type="submit" class="btn btn-danger" value="Subscribe!">
+					</form>
+					<hr>
+					<p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend est vel augue suscipit, nec mollis erat aliquet. <br> Aliquam fermentum sagittis turpis, non dapibus ex ultricies ut. Etiam in viverra dolor.</small></p>
 						
 					</div><!--modal-body-->
 				</div><!--modal-content-->
@@ -173,11 +186,13 @@
 
 		</div>
 		<!--BOOTSTRAP JS-->
-		<script scr="assets/js/jquery-2.1.4.min.js"></script>
-		<script scr="assets/js/main.js"></script>
-		<script scr="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/jquery-2.1.4.min.js"></script>
+
+		<script src="assets/js/bootstrap.min.js"></script>
+
+		<script src="assets/js/main.js"></script>
 		<!--typekit font-->
-		<script scr="//use/typekit.net/gla7wnd.js"></script>
+		<script src="//use/typekit.net/gla7wnd.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
 
 	</body>
